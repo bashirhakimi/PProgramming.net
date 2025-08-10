@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لؤي بشير الحكيمي - مهندس العوالم الرقمية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-gray-50 overflow-x-hidden">
+
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="bg-gray-900 fixed w-full top-0 z-50 nav-visible">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-green-600">Programming Pro</div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 space-x-reverse">
+                    <a href="#home" class="text-white hover:text-blue-400 px-3 py-2">الرئيسية</a>
+                    <a href="#pricing" class="text-white hover:text-blue-400 px-3 py-2">الأسعار</a>
+                    <a href="#about" class="text-white hover:text-blue-400 px-3 py-2">عنا</a>
+                    <a href="#contact" class="text-white hover:text-blue-400 px-3 py-2">تواصل</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-white hover:text-blue-400">الرئيسية</a>
+                <a href="#pricing" class="block px-3 py-2 text-white hover:text-blue-400">الأسعار</a>
+                <a href="#about" class="block px-3 py-2 text-white hover:text-blue-400">عنا</a>
+                <a href="#contact" class="block px-3 py-2 text-white hover:text-blue-400">تواصل</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-black min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+        <!-- Flowing Diagonal Lines -->
+        <div class="flowing-lines">
+            <div class="flow-line" style="top: 10%; width: 300px; animation-delay: 0s;"></div>
+            <div class="flow-line" style="top: 15%; width: 400px; animation-delay: 2s;"></div>
+            <div class="flow-line" style="top: 20%; width: 250px; animation-delay: 4s;"></div>
+            <div class="flow-line" style="top: 25%; width: 350px; animation-delay: 6s;"></div>
+            <div class="flow-line" style="top: 30%; width: 200px; animation-delay: 8s;"></div>
+            <div class="flow-line" style="top: 35%; width: 450px; animation-delay: 10s;"></div>
+            <div class="flow-line" style="top: 40%; width: 300px; animation-delay: 12s;"></div>
+            <div class="flow-line" style="top: 45%; width: 380px; animation-delay: 1s;"></div>
+            <div class="flow-line" style="top: 50%; width: 280px; animation-delay: 3s;"></div>
+            <div class="flow-line" style="top: 55%; width: 320px; animation-delay: 5s;"></div>
+            <div class="flow-line" style="top: 60%; width: 420px; animation-delay: 7s;"></div>
+            <div class="flow-line" style="top: 65%; width: 260px; animation-delay: 9s;"></div>
+            <div class="flow-line" style="top: 70%; width: 360px; animation-delay: 11s;"></div>
+            <div class="flow-line" style="top: 75%; width: 240px; animation-delay: 13s;"></div>
+            <div class="flow-line" style="top: 80%; width: 400px; animation-delay: 1.5s;"></div>
+        </div>
+        
+        <!-- Hero Circles -->
+        <div class="hero-circle"></div>
+        <div class="hero-circle"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="hero-title text-5xl md:text-7xl font-bold text-white mb-6">
+                مرحبا بك في عالم
+                <span class="text-green-400 block mt-4">
+                    التصميم الرقمي
+                </span>
+            </h1>
+            <p class="hero-subtitle text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                نحن نبني مواقع إلكترونية استثنائية تجمع بين الجمال والوظائف المتقدمة
+            </p>
+            <div class="hero-buttons space-y-4 md:space-y-0 md:space-x-4 md:space-x-reverse md:flex md:justify-center">
+                <button onclick="scrollToSection(\'pricing\')" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 pulse-button">
+                    اكتشف باقاتنا
+                </button>
+                <button onclick="scrollToSection(\'about\')" class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold ml-4 transition-all duration-300 hover:scale-105 border border-green-600">
+                    تعرف علينا
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-black relative overflow-hidden section-reveal">
+        <div class="pricing-lines">
+            <div class="pricing-line" style="top: 10%; width: 100px; animation-delay: 0s;"></div>
+            <div class="pricing-line" style="top: 20%; width: 150px; animation-delay: 1s;"></div>
+            <div class="pricing-line" style="top: 30%; width: 120px; animation-delay: 2s;"></div>
+            <div class="pricing-line" style="top: 40%; width: 180px; animation-delay: 3s;"></div>
+            <div class="pricing-line" style="top: 50%; width: 90px; animation-delay: 4s;"></div>
+            <div class="pricing-line" style="top: 60%; width: 160px; animation-delay: 5s;"></div>
+            <div class="pricing-line" style="top: 70%; width: 110px; animation-delay: 6s;"></div>
+            <div class="pricing-line" style="top: 80%; width: 140px; animation-delay: 7s;"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-12 neon-text">باقاتنا</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pricing Card 1 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg p-8 pricing-card hover-lift">
+                    <h3 class="text-3xl font-bold text-green-400 mb-4">الباقة الأساسية</h3>
+                    <p class="text-gray-300 text-lg mb-6">مثالية للمشاريع الصغيرة والبدء السريع</p>
+                    <div class="text-white text-5xl font-bold mb-6">
+                        $299<span class="text-xl text-gray-400">/مرة واحدة</span>
+                    </div>
+                    <ul class="text-gray-300 text-left mb-8 space-y-3">
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تصميم صفحة واحدة</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تصميم متجاوب (Responsive)</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تحسين محركات البحث (SEO) الأساسي</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> دعم فني لمدة شهر</li>
+                    </ul>
+                    <button class="morph-button w-full">اختر الباقة</button>
+                </div>
+                <!-- Pricing Card 2 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg p-8 pricing-card hover-lift border-2 border-green-500">
+                    <h3 class="text-3xl font-bold text-green-400 mb-4">الباقة المتقدمة</h3>
+                    <p class="text-gray-300 text-lg mb-6">للمشاريع المتوسطة التي تحتاج لميزات إضافية</p>
+                    <div class="text-white text-5xl font-bold mb-6">
+                        $799<span class="text-xl text-gray-400">/مرة واحدة</span>
+                    </div>
+                    <ul class="text-gray-300 text-left mb-8 space-y-3">
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تصميم حتى 5 صفحات</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تصميم متجاوب (Responsive)</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تحسين محركات البحث (SEO) متقدم</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تكامل مع وسائل التواصل الاجتماعي</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> دعم فني لمدة 3 أشهر</li>
+                    </ul>
+                    <button class="morph-button w-full">اختر الباقة</button>
+                </div>
+                <!-- Pricing Card 3 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg p-8 pricing-card hover-lift">
+                    <h3 class="text-3xl font-bold text-green-400 mb-4">الباقة الاحترافية</h3>
+                    <p class="text-gray-300 text-lg mb-6">للمشاريع الكبيرة والشركات الناشئة</p>
+                    <div class="text-white text-5xl font-bold mb-6">
+                        $1499<span class="text-xl text-gray-400">/مرة واحدة</span>
+                    </div>
+                    <ul class="text-gray-300 text-left mb-8 space-y-3">
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تصميم حتى 10 صفحات</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تصميم متجاوب (Responsive)</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تحسين محركات البحث (SEO) احترافي</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تكامل مع أنظمة الدفع</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> دعم فني لمدة 6 أشهر</li>
+                        <li class="flex items-center"><svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> تدريب على إدارة المحتوى</li>
+                    </ul>
+                    <button class="morph-button w-full">اختر الباقة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900 relative overflow-hidden section-reveal">
+        <div class="about-waves">
+            <div class="about-line" style="top: 10%; left: 0; width: 200px; animation-delay: 0s;"></div>
+            <div class="about-line" style="top: 30%; left: 50px; width: 250px; animation-delay: 2s;"></div>
+            <div class="about-line" style="top: 50%; left: 100px; width: 180px; animation-delay: 4s;"></div>
+            <div class="about-line" style="top: 70%; left: 150px; width: 300px; animation-delay: 6s;"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-12 neon-text">عنا</h2>
+            <div class="bg-gray-800 rounded-lg shadow-lg p-8 card-3d">
+                <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                    نحن فريق من المهندسين والمصممين المبدعين، متخصصون في بناء تجارب رقمية فريدة ومبتكرة. نؤمن بأن كل مشروع هو فرصة لترك بصمة إبداعية، ونسعى دائمًا لتقديم حلول تتجاوز توقعات عملائنا.
+                </p>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    منذ تأسيسنا، التزمنا بتقديم أعلى مستويات الجودة والاحترافية في كل تفاصيل عملنا، من التصميم الأولي وحتى الإطلاق والدعم المستمر. هدفنا هو تمكين عملائنا من تحقيق أهدافهم الرقمية بنجاح.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black relative overflow-hidden section-reveal">
+        <div class="contact-waves">
+            <div class="contact-line" style="top: 15%; left: 0; width: 100px; animation-delay: 0s;"></div>
+            <div class="contact-line" style="top: 35%; left: 50px; width: 120px; animation-delay: 2s;"></div>
+            <div class="contact-line" style="top: 55%; left: 100px; width: 80px; animation-delay: 4s;"></div>
+            <div class="contact-line" style="top: 75%; left: 150px; width: 150px; animation-delay: 6s;"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-12 neon-text">تواصل معنا</h2>
+            <div class="max-w-lg mx-auto bg-gray-800 rounded-lg shadow-lg p-8 form-container card-3d">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-300 text-sm font-bold mb-2 text-right">الاسم:</label>
+                        <input type="text" id="name" name="name" class="glass-input w-full px-4 py-3 text-gray-900 focus:outline-none" placeholder="اسمك الكامل">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-300 text-sm font-bold mb-2 text-right">البريد الإلكتروني:</label>
+                        <input type="email" id="email" name="email" class="glass-input w-full px-4 py-3 text-gray-900 focus:outline-none" placeholder="بريدك الإلكتروني">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-300 text-sm font-bold mb-2 text-right">الرسالة:</label>
+                        <textarea id="message" name="message" rows="5" class="glass-input w-full px-4 py-3 text-gray-900 focus:outline-none" placeholder="رسالتك"></textarea>
+                    </div>
+                    <button type="submit" class="morph-button w-full pulse-button">
+                        إرسال الرسالة
+                        <span class="loading-dots"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p>&copy; 2025 لؤي بشير الحكيمي. جميع الحقوق محفوظة.</p>
+            <div class="flex justify-center space-x-4 space-x-reverse mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">فيسبوك</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">تويتر</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">لينكدإن</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
